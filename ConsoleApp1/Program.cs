@@ -12,7 +12,7 @@ namespace BikeSharingPrediction
         // Путь к файлу данных
         private static string _dataPath = "bike_sharing.csv";
 
-        // Класс для входных данных с boolean меткой
+        // Класс для входных данных 
         public class BikeRentalData
         {
             [LoadColumn(0)]
@@ -44,8 +44,7 @@ namespace BikeSharingPrediction
 
             [LoadColumn(9)]
             public float Windspeed { get; set; }
-
-            // Используем boolean напрямую
+            
             [LoadColumn(10)]
             public bool RentalType { get; set; }
         }
